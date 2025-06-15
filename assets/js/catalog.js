@@ -48,18 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
     id: 'bluebeam',
-    name: 'BlueBeam Software',
-    category: 'automation',
+    name: 'ProtonMail',
+    category: 'security',
     price: 60.99,
-    description: 'Software orientado a la gestión documental y colaboración en proyectos , con marcado digital y control de flujos de trabajo.',
+    description: 'Software  de Cifrado militar, sincronización entre dispositivos y generación automática de claves robustas.',
     version: '2.0.0',
     featured: false,
-    image: '/assets/img/imagenes/blu.png',
+    image: '/assets/img/imagenes/cha.png',
     features: [
-        'Gestión documental eficiente',
-        'Colaboración en tiempo real',
-        'Marcado digital de documentos',
-        'Control avanzado de flujos de trabajo'
+        'Cifrado de nivel militar para contraseñas',
+        'Acceso multiplataforma ultra-seguro',
+        'Generador automático de claves fuertes',
+        'Autenticación de dos factores integrada'
     ]
 }
 

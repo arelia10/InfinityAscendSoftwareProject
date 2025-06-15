@@ -122,9 +122,9 @@ class ShoppingCart {
             },
             'bluebeam': {
                 id: 'bluebeam',
-                name: window.i18n && window.i18n.initialized ? window.i18n.translate('products.bluebeam.title') : 'BlueBeam Software',
+                name: window.i18n && window.i18n.initialized ? window.i18n.translate('products.bluebeam.title') : 'ProtonMail',
                 price: 60.99,
-             image: '/assets/img/imagenes/blu.png',
+             image: '/assets/img/imagenes/cha.png',
             }
             
         };

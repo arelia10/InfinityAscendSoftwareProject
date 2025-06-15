@@ -171,6 +171,13 @@ function loadPurchasesData() {
                     products: ['BulletProof'],
                     total: 39.99,
                     status: 'Completado'
+                },
+                 {
+                    id: 'ORD-0987654322',
+                    date: '10/05/2025',
+                    products: ['ProtonMail'],
+                    total: 60.99,
+                    status: 'Completado'
                 }
             ];
             

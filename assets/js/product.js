@@ -147,7 +147,7 @@ function addToCartFromProductPage() {
         if (window.infinityUtils) {
           const productName = 
   productId === 'autoflow' ? 'Autoflow' : 
-  productId === 'bluebeam' ? 'Bluebeam' : 
+  productId === 'bluebeam' ? 'ProtonMail' : 
   'BulletProof';
 
             const message = window.i18n && window.i18n.initialized ? 
@@ -185,9 +185,9 @@ function getDetailedProductInfo() {
         productInfo.features = ['300 bits de seguridad', 'encriptación avanzada', 'interfaz intuitiva'];
     }else if (productPath.includes('/bluebeam/')) {
         productInfo.id = 'bluebeam';
-        productInfo.name = 'BlueBeam Software';
+        productInfo.name = 'ProtonMail';
         productInfo.price = 60.99;
-        productInfo.features = ['Gestión documental eficiente', 'Colaboración en tiempo real', 'Marcado digital de documentos', 'Control avanzado de flujos de trabajo'];
+        productInfo.features = ['Cifrado de nivel militar para contraseñas', 'Acceso multiplataforma ultra-seguro', 'Generador automático de claves fuertes', 'Autenticación de dos factores integrada'];
     }
     
     return productInfo;

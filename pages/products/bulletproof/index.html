@@ -12,11 +12,7 @@
 <body>
     <div id="app" class="app">
         <!-- Selector de idioma flotante -->
-        <div class="language-selector">
-            <button class="language-btn active" data-lang="en">EN</button>
-            <button class="language-btn" data-lang="es">ES</button>
-            <button class="language-btn" data-lang="fr">FR</button>
-        </div>
+       
 
         <!-- Header con navegación -->
         <header class="main-header">
@@ -85,27 +81,34 @@
                             </div>
                         </div>
                         <div class="product-image-container">
-                            <img src="/assets/img/products/bulletproof/main-image.jpg" alt="BulletProof Software Interface" class="product-main-image">
+                            <img src="../../../assets/img/imagenes/bul.png" alt="BulletProof Software Interface" >
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Video de demostración -->
-            <section id="video-demo" class="video-demo-section">
-                <div class="container">
-                    <h2 class="section-title" data-i18n="products.videoDemo">Demostración en Video</h2>
-                    <p class="section-subtitle" data-i18n="products.bulletproof.videoDesc">Descubre cómo BulletProof protege tus contraseñas con la más avanzada tecnología de encriptación.</p>
-                    
-                    <div class="video-container">
-                        <video controls poster="/assets/videos/bulletproof/demo-poster.jpg">
-                            <source src="/assets/videos/bulletproof/demo.webm" type="video/webm">
-                            <source src="/assets/videos/bulletproof/demo.mp4" type="video/mp4">
-                            <p data-i18n="products.videoNotSupported">Tu navegador no soporta la reproducción de videos.</p>
-                        </video>
-                    </div>
-                </div>
-            </section>
+           <!-- Video de demostración -->
+<section id="video-demo" class="video-demo-section">
+  <div class="container">
+    <h2 class="section-title" data-i18n="products.videoDemo">Demostración en Video</h2>
+    <p class="section-subtitle" data-i18n="products.bulletproof.videoDesc">
+      Descubre cómo BulletProof protege tus contraseñas con la más avanzada tecnología de encriptación.
+    </p>
+
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+      <iframe
+        src="https://www.youtube.com/embed/UuW4_Kqycwg?autoplay=1&mute=1&loop=1&playlist=UuW4_Kqycwg&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
 
             <!-- Características principales -->
             <section class="features-section">
@@ -236,74 +239,7 @@
                 </div>
             </section>
 
-            <!-- FAQs -->
-            <section class="faq-section" id="faq">
-                <div class="container">
-                    <h2 class="section-title" data-i18n="products.faqTitle">Preguntas Frecuentes</h2>
-                    
-                    <div class="faq-container">
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                <span data-i18n="products.bulletproof.faq.q1">¿Qué hace que BulletProof sea más seguro que otros gestores de contraseñas?</span>
-                                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p data-i18n="products.bulletproof.faq.a1">BulletProof se diferencia por utilizar algoritmos de encriptación de grado militar con más de 300 bits de entropía, mientras que la mayoría de los gestores de contraseñas se limitan a 128 o 256 bits. Esto hace que las contraseñas generadas por BulletProof sean prácticamente invulnerables a ataques de fuerza bruta, incluso con la tecnología de supercomputación más avanzada. Además, implementamos un sistema de cifrado de extremo a extremo donde ni siquiera nosotros podemos acceder a tus contraseñas, y añadimos capas adicionales de seguridad como autenticación de dos factores, detección de keyloggers y protección contra ataques de relleno.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                <span data-i18n="products.bulletproof.faq.q2">¿Qué sucede si olvido mi contraseña maestra?</span>
-                                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p data-i18n="products.bulletproof.faq.a2">Por razones de seguridad, no almacenamos tu contraseña maestra y no podemos recuperarla si la olvidas. Sin embargo, BulletProof ofrece dos opciones de respaldo:</p>
-                                <ol>
-                                    <li>Durante la configuración inicial, puedes generar una clave de recuperación de emergencia que debes guardar en un lugar seguro.</li>
-                                    <li>Puedes configurar un método de recuperación basado en preguntas de seguridad personalizadas y un dispositivo de confianza.</li>
-                                </ol>
-                                <p>Si no has configurado ninguna de estas opciones y olvidas tu contraseña maestra, no podrás acceder a tus contraseñas almacenadas. Esta limitación es un aspecto fundamental de nuestro enfoque de seguridad, ya que garantiza que nadie, ni siquiera nosotros, pueda acceder a tus contraseñas sin autorización.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                <span data-i18n="products.bulletproof.faq.q3">¿Cómo funciona la sincronización entre dispositivos?</span>
-                                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p data-i18n="products.bulletproof.faq.a3">BulletProof sincroniza tus contraseñas entre dispositivos de manera segura utilizando cifrado de extremo a extremo. Cuando añades o modificas una contraseña en un dispositivo, los datos se cifran localmente antes de enviarse a nuestros servidores. Estos datos cifrados solo pueden ser descifrados por tus dispositivos autorizados que poseen la clave de descifrado derivada de tu contraseña maestra.</p>
-                                <p>Puedes elegir entre tres modos de sincronización:</p>
-                                <ul>
-                                    <li><strong>Automático:</strong> Sincronización instantánea cuando se detectan cambios.</li>
-                                    <li><strong>Manual:</strong> Sincronización solo cuando tú lo solicitas.</li>
-                                    <li><strong>Local:</strong> Sin sincronización en la nube, ideal para entornos de alta seguridad.</li>
-                                </ul>
-                                <p>La sincronización funciona en todos los sistemas operativos compatibles (Windows, macOS, Linux) y con las extensiones de navegador.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <button class="faq-question">
-                                <span data-i18n="products.bulletproof.faq.q4">¿Es posible importar contraseñas desde otros gestores?</span>
-                                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </button>
-                            <div class="faq-answer">
-                                <p data-i18n="products.bulletproof.faq.a4">Sí, BulletProof permite importar contraseñas desde la mayoría de los gestores de contraseñas populares, incluyendo LastPass, 1Password, Dashlane, KeePass, Bitwarden y Chrome/Firefox/Safari. El proceso de importación es seguro y preserva todas tus carpetas, etiquetas y metadatos.</p>
-                                <p>Para importar tus contraseñas:</p>
-                                <ol>
-                                    <li>Exporta tus datos desde tu gestor de contraseñas actual (generalmente en formato CSV o XML).</li>
-                                    <li>En BulletProof, ve a Configuración > Importar.</li>
-                                    <li>Selecciona tu gestor de contraseñas anterior y carga el archivo exportado.</li>
-                                    <li>Revisa y confirma la importación.</li>
-                                </ol>
-                                <p>Después de la importación, te recomendamos analizar la seguridad de tus contraseñas existentes. BulletProof identificará automáticamente contraseñas débiles, duplicadas o comprometidas, y te ofrecerá reemplazarlas con alternativas más seguras.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <!-- CTA final -->
             <section class="cta-section">
@@ -336,6 +272,7 @@
                         <ul class="footer-links">
                             <li><a href="/pages/products/autoflow/index.html" data-i18n="products.autoflow.title">Autoflow</a></li>
                             <li><a href="/pages/products/bulletproof/index.html" data-i18n="products.bulletproof.title">BulletProof</a></li>
+                             <li><a href="/pages/products/bluebeam/index.html" data-i18n="products.bulletproof.title">ProtonMail</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">

@@ -109,6 +109,7 @@
                         <ul class="footer-links">
                             <li><a href="/pages/products/autoflow/index.html" data-i18n="products.autoflow.title">Autoflow</a></li>
                             <li><a href="/pages/products/bulletproof/index.html" data-i18n="products.bulletproof.title">BulletProof</a></li>
+                              <li><a href="/pages/products/bluebeam/index.html" data-i18n="products.bulletproof.title">ProtonMail</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -261,9 +262,38 @@
                             title: 'BulletProof para Linux',
                             size: '26 MB'
                         }
+                    },
+                    'bluebeam': {
+                        windows: {
+                            url: '/downloads/ProtonMail/ProtonMail-windows-latest.exe',
+                            title: 'ProtonMail para Windows',
+                            size: '28 MB'
+                        },
+                        mac: {
+                            url: '/downloads/bulletproof/ProtonMail-mac-latest.dmg',
+                            title: 'ProtonMail para macOS',
+                            size: '30 MB'
+                        },
+                        linux: {
+                            url: '/downloads/ProtonMail/ProtonMail-linux-latest.deb',
+                            title: 'ProtonMail para Linux',
+                            size: '26 MB'
+                        }
                     }
                 };
-                
+                // Configurar comportamiento personalizado para botones de descarga
+setTimeout(() => {
+  document.querySelectorAll('.download-btn').forEach(btn => {
+       btn.addEventListener('click', function (event) {
+      event.preventDefault(); 
+
+
+      // Mostrar alerta simple
+      alert('✅ Producto descargado');
+    });
+  });
+}, 0);
+
                 // Añadir enlaces de descarga para cada producto comprado
                 const purchasedProducts = [];
                 orderData.items.forEach(item => {
@@ -289,7 +319,7 @@
                                 <div class="download-title">${download.title}</div>
                                 <div class="download-description">${download.size}</div>
                             </div>
-                            <a href="${download.url}" class="btn btn-primary download-btn" data-i18n="thankyou.download">Descargar</a>
+                            <a  class="btn btn-primary download-btn" data-i18n="thankyou.download">Descargar</a>
                         `;
                         
                         downloadContainer.appendChild(downloadElement);

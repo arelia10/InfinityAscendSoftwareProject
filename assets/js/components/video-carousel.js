@@ -37,21 +37,16 @@ class EnhancedVideoCarousel {
         this.productData = {
             'autoflow': {
                 name: 'Autoflow',
-                price: '$99.99',
+                price: '$49.99',
                 description: 'Automatización masiva inteligente'
             },
             'bulletproof': {
                 name: 'BulletProof', 
-                price: '$19.99',
+                price: '$39.99',
                 description: 'Seguridad de contraseñas militar'
             },
-            'securevault': {
-                name: 'SecureVault',
-                price: '$59.99', 
-                description: 'Almacenamiento ultra-seguro'
-            },
             'bluebeam': {
-                name: 'Bluebeam',
+                name: 'ProtonMail',
                 price: '$60.99',
                 description: 'Gestión documental y colaboración'
             }
