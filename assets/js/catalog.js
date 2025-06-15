@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     description: 'Software  de Cifrado militar, sincronización entre dispositivos y generación automática de claves robustas.',
     version: '2.0.0',
     featured: false,
-    image: '/assets/img/imagenes/cha.png',
+    image: '/assets/img/imagenes/Cha.png',
     features: [
         'Cifrado de nivel militar para contraseñas',
         'Acceso multiplataforma ultra-seguro',
