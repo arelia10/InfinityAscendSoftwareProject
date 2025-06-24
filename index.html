@@ -19,6 +19,7 @@
       type="video/webm"
     />
   </head>
+  
   <body>
     <div id="app" class="app">
       <header class="main-header">
@@ -63,34 +64,38 @@
               </ul>
             </nav>
             <div class="header-actions">
-              <div class="cart-widget">
-                <a href="pages/cart.html" class="cart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="9" cy="21" r="1"></circle>
-                    <circle cx="20" cy="21" r="1"></circle>
-                    <path
-                      d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-                    ></path>
-                  </svg>
-                  <span class="cart-count">0</span>
-                </a>
-              </div>
-              <button class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
+  <!-- Carrito de compras -->
+  <div class="cart-widget">
+    <a href="pages/cart.html" class="cart-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="cart-count">0</span>
+    </a>
+  </div>
+
+  <!-- Formulario de Login para Administrador -->
+  <div id="admin-login" class="login-widget">
+    <input type="text" id="admin-username" placeholder="Admin Username" />
+    <input type="password" id="admin-password" placeholder="Password" />
+    <button id="login-btn">Login</button>
+  </div>
+
+  <!-- Botón para generar reporte (oculto inicialmente) -->
+  <div id="admin-report-actions" style="display: none;">
+    <button id="generate-report-btn" class="btn btn-primary">Generar Reporte de Ventas</button>
+  </div>
+<div id="admin-logout-actions" style="display: none; margin-left: 2rem;">
+  <button id="logout-btn" class="btn btn-danger">Salir</button>
+</div>
+  <!-- Botón de menú móvil (para dispositivos pequeños) -->
+  <button class="mobile-menu-toggle">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
           </div>
         </div>
       </header>
@@ -196,11 +201,12 @@
                    Software de Cifrado militar, sincronización entre dispositivos y generación automática de claves robustas.
                   </p>
                   <div class="slide-actions">
-                    <a
+                    <button
                       href="pages/products/bluebeam/index.html"
                       class="btn btn-primary"
                       data-i18n="buttons.details"
-                      >Ver detalles</a
+                      >Ver detalles</button
+                      
                     >
                     <button
                       class="btn btn-secondary add-to-cart"
@@ -605,5 +611,10 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/components/video-carousel.js"></script>
     <script src="assets/js/cart.js"></script>
+        <script src="assets/js/admin.js"></script>
+   <script>
+ 
+
+</script>
   </body>
 </html>

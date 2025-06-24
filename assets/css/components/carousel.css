@@ -454,3 +454,35 @@
     opacity: 1 !important;
     display: flex !important;
 }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.login-widget {
+  margin-left: 20px; /* Separación entre el carrito y el login */
+}
+
+.login-widget input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#admin-report-actions {
+  margin-left: 20px;
+}
+
+#generate-report-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#generate-report-btn:hover {
+  background-color: #0056b3;
+}

@@ -802,3 +802,92 @@ section {
 .slide-up {
     animation: slideUp var(--transition-normal);
 }
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.login-widget {
+  margin-left: 20px; /* Separación entre el carrito y el login */
+}
+
+.login-widget input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#admin-report-actions {
+  margin-left: 20px;
+}
+
+#generate-report-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#generate-report-btn:hover {
+  background-color: #0056b3;
+}
+/* Estilos para el contenedor de login */
+#admin-login {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre los campos */
+}
+
+/* Estilo para los campos de entrada de texto */
+#admin-login input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 140px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+/* Cambio de borde al hacer focus */
+#admin-login input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Estilo para el botón de login */
+#login-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para el hover del botón */
+#login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el hover cuando el formulario de login es inválido */
+#login-btn:disabled {
+  background-color: #a1a1a1;
+  cursor: not-allowed;
+}
+
+/* Agregar un efecto visual para el formulario de login en dispositivos pequeños */
+@media (max-width: 768px) {
+  #admin-login input {
+    width: 100px; /* Ajustar el tamaño en pantallas pequeñas */
+  }
+
+  #login-btn {
+    padding: 6px 12px; /* Reducir el tamaño del botón */
+  }
+}
